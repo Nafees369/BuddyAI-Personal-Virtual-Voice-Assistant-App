@@ -1,0 +1,38 @@
+// This block defines settings for all projects in your build
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// This block defines settings specific to the root project (android)
+buildscript {
+    ext.kotlin_version = '2.0.20' // Update with your desired version
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.5.2' // Update with your Gradle version
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" // Use ext.kotlin_version here
+    }
+}
+
+// Rest of your build.gradle file goes here...
+rootProject.buildDir = '../build'
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
+
