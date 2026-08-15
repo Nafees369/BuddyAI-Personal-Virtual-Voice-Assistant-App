@@ -1121,14 +1121,6 @@ Create a pull request describing:
 
 ---
 
-# 📜 License
-
-This project does not currently specify a custom license in the repository README.
-
-If you intend to distribute BuddyAI publicly, add an appropriate `LICENSE` file to clearly define how others may use, modify, and distribute the project.
-
----
-
 # 👨‍💻 Author
 
 **Nafees Ahmad**
@@ -1308,9 +1300,9 @@ Generate a cyberpunk city at night.
 
 # 🔗 Repository
 
-The complete source code is available on GitHub:
+The complete source code is available on GitHub.
 
-[BuddyAI — Personal Virtual Voice Assistant App]()
+https://github.com/Nafees369/BuddyAI-Personal-Virtual-Voice-Assistant-App
 
 ---
 
